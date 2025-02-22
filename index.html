@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Sentiment Analysis by Twitter Dataset</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Airline Sentiment Analysis</h1>
+        <p class="subtitle">Enter your airline review below to analyze its sentiment:</p>
+        <form id="sentimentForm" method="POST">
+            <textarea id="textInput" name="text" placeholder="Enter your text here..." required></textarea>
+            <div id="charCount">0/500 characters</div>
+            <br>
+            <button type="submit" id="analyzeButton">Analyze Sentiment</button>
+            <div id="loadingSpinner" class="spinner"></div>
+        </form>
+        {% if sentiment %}
+            <div class="result">
+                <h2>Result</h2>
+                <p>Sentiment: <span class="sentiment {{ sentiment.lower() }}">{{ sentiment }}</span></p>
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
