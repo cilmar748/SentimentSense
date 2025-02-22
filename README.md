@@ -1,6 +1,6 @@
 # SentimentSense
 
-SentimentSense is a sentiment analysis tool that detects whether user-inputted airline comment text is positive, negative, or neutral. Built using Python, Scikit-learn, and Flask, this project provides both a command-line interface and a web application for real-time sentiment analysis.
+SentimentSense is a sentiment analysis tool that detects whether user-inputted comment on airline is positive, negative, or neutral. Built using Python, Scikit-learn, and Flask, this project provides both a command-line interface and a web application for real-time sentiment analysis.
 
 ## Features
 - Text preprocessing (punctuation removal, lowercase conversion, stopword removal).
